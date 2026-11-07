@@ -1,0 +1,10 @@
+Name       : Saumya Joshi
+Enrollment : ADT23SOCB0997
+Roll No    : 34
+Class      : AIA-05 Batch B
+Problem    : P34 - Visual Question Answering App
+
+Live app   : https://huggingface.co/spaces/samjocodes/p34-vqa-app   
+GitHub     : https://github.com/samjocodes/p34-vqa-app              
+Report     : P34_report_Saumya_Joshi.pdf (in this folder)
+Video      : P34_demo_Saumya_Joshi.mp4 (in this folder)

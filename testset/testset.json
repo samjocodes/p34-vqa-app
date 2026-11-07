@@ -1,0 +1,374 @@
+[
+  {
+    "id": "c01",
+    "condition": "clean",
+    "file": "c01_clean.png",
+    "shapes": [
+      [
+        "circle",
+        "red"
+      ],
+      [
+        "square",
+        "blue"
+      ]
+    ],
+    "question": "What color is the circle?",
+    "answer": "red"
+  },
+  {
+    "id": "c02",
+    "condition": "clean",
+    "file": "c02_clean.png",
+    "shapes": [
+      [
+        "triangle",
+        "green"
+      ],
+      [
+        "circle",
+        "yellow"
+      ],
+      [
+        "square",
+        "red"
+      ]
+    ],
+    "question": "How many shapes are there?",
+    "answer": "3"
+  },
+  {
+    "id": "c03",
+    "condition": "clean",
+    "file": "c03_clean.png",
+    "shapes": [
+      [
+        "square",
+        "blue"
+      ],
+      [
+        "square",
+        "blue"
+      ],
+      [
+        "square",
+        "green"
+      ],
+      [
+        "circle",
+        "red"
+      ]
+    ],
+    "question": "How many squares are there?",
+    "answer": "3"
+  },
+  {
+    "id": "c04",
+    "condition": "clean",
+    "file": "c04_clean.png",
+    "shapes": [
+      [
+        "triangle",
+        "yellow"
+      ],
+      [
+        "circle",
+        "blue"
+      ]
+    ],
+    "question": "Is there a triangle in the image?",
+    "answer": "yes"
+  },
+  {
+    "id": "c05",
+    "condition": "clean",
+    "file": "c05_clean.png",
+    "shapes": [
+      [
+        "circle",
+        "green"
+      ],
+      [
+        "square",
+        "red"
+      ]
+    ],
+    "question": "Is there a triangle in the image?",
+    "answer": "no"
+  },
+  {
+    "id": "c06",
+    "condition": "clean",
+    "file": "c06_clean.png",
+    "shapes": [
+      [
+        "square",
+        "red"
+      ],
+      [
+        "triangle",
+        "blue"
+      ],
+      [
+        "circle",
+        "green"
+      ]
+    ],
+    "question": "What shape is the blue object?",
+    "answer": "triangle"
+  },
+  {
+    "id": "c07",
+    "condition": "clean",
+    "file": "c07_clean.png",
+    "shapes": [
+      [
+        "circle",
+        "yellow"
+      ]
+    ],
+    "question": "What color is the circle?",
+    "answer": "yellow"
+  },
+  {
+    "id": "c08",
+    "condition": "clean",
+    "file": "c08_clean.png",
+    "shapes": [
+      [
+        "circle",
+        "red"
+      ],
+      [
+        "circle",
+        "green"
+      ],
+      [
+        "square",
+        "blue"
+      ]
+    ],
+    "question": "How many circles are there?",
+    "answer": "2"
+  },
+  {
+    "id": "l01",
+    "condition": "lowlight",
+    "file": "l01_lowlight.png",
+    "shapes": [
+      [
+        "circle",
+        "red"
+      ],
+      [
+        "square",
+        "green"
+      ]
+    ],
+    "question": "What color is the circle?",
+    "answer": "red"
+  },
+  {
+    "id": "l02",
+    "condition": "lowlight",
+    "file": "l02_lowlight.png",
+    "shapes": [
+      [
+        "square",
+        "blue"
+      ],
+      [
+        "square",
+        "yellow"
+      ],
+      [
+        "triangle",
+        "red"
+      ]
+    ],
+    "question": "How many squares are there?",
+    "answer": "2"
+  },
+  {
+    "id": "l03",
+    "condition": "lowlight",
+    "file": "l03_lowlight.png",
+    "shapes": [
+      [
+        "triangle",
+        "green"
+      ],
+      [
+        "circle",
+        "blue"
+      ]
+    ],
+    "question": "Is there a circle in the image?",
+    "answer": "yes"
+  },
+  {
+    "id": "l04",
+    "condition": "lowlight",
+    "file": "l04_lowlight.png",
+    "shapes": [
+      [
+        "circle",
+        "yellow"
+      ],
+      [
+        "square",
+        "red"
+      ],
+      [
+        "triangle",
+        "green"
+      ]
+    ],
+    "question": "What shape is the green object?",
+    "answer": "triangle"
+  },
+  {
+    "id": "l05",
+    "condition": "lowlight",
+    "file": "l05_lowlight.png",
+    "shapes": [
+      [
+        "square",
+        "red"
+      ],
+      [
+        "circle",
+        "blue"
+      ]
+    ],
+    "question": "Is there a triangle in the image?",
+    "answer": "no"
+  },
+  {
+    "id": "l06",
+    "condition": "lowlight",
+    "file": "l06_lowlight.png",
+    "shapes": [
+      [
+        "triangle",
+        "red"
+      ]
+    ],
+    "question": "What color is the triangle?",
+    "answer": "red"
+  },
+  {
+    "id": "k01",
+    "condition": "cluttered",
+    "file": "k01_cluttered.png",
+    "shapes": [
+      [
+        "circle",
+        "blue"
+      ],
+      [
+        "square",
+        "red"
+      ]
+    ],
+    "question": "What color is the circle?",
+    "answer": "blue"
+  },
+  {
+    "id": "k02",
+    "condition": "cluttered",
+    "file": "k02_cluttered.png",
+    "shapes": [
+      [
+        "triangle",
+        "yellow"
+      ],
+      [
+        "triangle",
+        "green"
+      ],
+      [
+        "circle",
+        "red"
+      ]
+    ],
+    "question": "How many triangles are there?",
+    "answer": "2"
+  },
+  {
+    "id": "k03",
+    "condition": "cluttered",
+    "file": "k03_cluttered.png",
+    "shapes": [
+      [
+        "square",
+        "green"
+      ],
+      [
+        "circle",
+        "yellow"
+      ]
+    ],
+    "question": "Is there a square in the image?",
+    "answer": "yes"
+  },
+  {
+    "id": "k04",
+    "condition": "cluttered",
+    "file": "k04_cluttered.png",
+    "shapes": [
+      [
+        "circle",
+        "red"
+      ],
+      [
+        "triangle",
+        "blue"
+      ],
+      [
+        "square",
+        "yellow"
+      ]
+    ],
+    "question": "What shape is the yellow object?",
+    "answer": "square"
+  },
+  {
+    "id": "k05",
+    "condition": "cluttered",
+    "file": "k05_cluttered.png",
+    "shapes": [
+      [
+        "circle",
+        "green"
+      ],
+      [
+        "square",
+        "blue"
+      ]
+    ],
+    "question": "Is there a triangle in the image?",
+    "answer": "no"
+  },
+  {
+    "id": "k06",
+    "condition": "cluttered",
+    "file": "k06_cluttered.png",
+    "shapes": [
+      [
+        "circle",
+        "red"
+      ],
+      [
+        "circle",
+        "blue"
+      ],
+      [
+        "circle",
+        "green"
+      ]
+    ],
+    "question": "How many circles are there?",
+    "answer": "3"
+  }
+]

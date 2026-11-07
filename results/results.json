@@ -1,0 +1,761 @@
+{
+  "meta": {
+    "timestamp": "2026-11-07 14:50",
+    "vqa_model": "Salesforce/blip-vqa-base",
+    "device": "cpu",
+    "llm_backend": "Qwen/Qwen2.5-0.5B-Instruct (local)",
+    "bert_family_model": "sentence-transformers/all-MiniLM-L6-v2",
+    "mock": false
+  },
+  "summary": {
+    "n_pairs": 20,
+    "overall_correct": 14,
+    "overall_pct": 70.0,
+    "by_condition": {
+      "clean": {
+        "n": 8,
+        "correct": 5,
+        "pct": 62.5
+      },
+      "lowlight": {
+        "n": 6,
+        "correct": 5,
+        "pct": 83.3
+      },
+      "cluttered": {
+        "n": 6,
+        "correct": 4,
+        "pct": 66.7
+      }
+    },
+    "lowlight_before_pct": 83.3,
+    "lowlight_after_pct": 83.3,
+    "overall_with_enhancement_pct": 70.0,
+    "mean_vqa_latency_s": 3.017,
+    "mean_confidence_correct": 0.758,
+    "mean_confidence_wrong": 0.364
+  },
+  "pairs": [
+    {
+      "id": "c01",
+      "condition": "clean",
+      "file": "c01_clean.png",
+      "question": "What color is the circle?",
+      "gt": "red",
+      "pred_raw": "red",
+      "correct_raw": true,
+      "conf_raw": 0.9124122858047485,
+      "latency_raw": 2.948,
+      "pred_enh": null,
+      "correct_enh": null,
+      "conf_enh": null,
+      "expansions": {
+        "zero_shot": {
+          "raw_text": "The circle has a red color.",
+          "text": "The circle has a red color.",
+          "raw_contains": true,
+          "fallback_used": false,
+          "sim": 0.8672566413879395,
+          "words": 6,
+          "latency": 6.077
+        },
+        "few_shot": {
+          "raw_text": "The circle is red.",
+          "text": "The circle is red.",
+          "raw_contains": true,
+          "fallback_used": false,
+          "sim": 0.8372040390968323,
+          "words": 4,
+          "latency": 3.294
+        }
+      }
+    },
+    {
+      "id": "c02",
+      "condition": "clean",
+      "file": "c02_clean.png",
+      "question": "How many shapes are there?",
+      "gt": "3",
+      "pred_raw": "5",
+      "correct_raw": false,
+      "conf_raw": 0.25416767597198486,
+      "latency_raw": 8.459,
+      "pred_enh": null,
+      "correct_enh": null,
+      "conf_enh": null,
+      "expansions": {
+        "zero_shot": {
+          "raw_text": "There are five shapes in the image.",
+          "text": "There are five shapes in the image.",
+          "raw_contains": true,
+          "fallback_used": false,
+          "sim": 0.8404773473739624,
+          "words": 7,
+          "latency": 2.681
+        },
+        "few_shot": {
+          "raw_text": "There are 5 shapes in the image.",
+          "text": "There are 5 shapes in the image.",
+          "raw_contains": true,
+          "fallback_used": false,
+          "sim": 0.8626004457473755,
+          "words": 7,
+          "latency": 4.34
+        }
+      }
+    },
+    {
+      "id": "c03",
+      "condition": "clean",
+      "file": "c03_clean.png",
+      "question": "How many squares are there?",
+      "gt": "3",
+      "pred_raw": "4",
+      "correct_raw": false,
+      "conf_raw": 0.4272409677505493,
+      "latency_raw": 2.484,
+      "pred_enh": null,
+      "correct_enh": null,
+      "conf_enh": null,
+      "expansions": {
+        "zero_shot": {
+          "raw_text": "There are four squares on this map.",
+          "text": "There are four squares on this map.",
+          "raw_contains": true,
+          "fallback_used": false,
+          "sim": 0.6865888237953186,
+          "words": 7,
+          "latency": 3.256
+        },
+        "few_shot": {
+          "raw_text": "There are 4 squares in the image.",
+          "text": "There are 4 squares in the image.",
+          "raw_contains": true,
+          "fallback_used": false,
+          "sim": 0.8088486194610596,
+          "words": 7,
+          "latency": 4.182
+        }
+      }
+    },
+    {
+      "id": "c04",
+      "condition": "clean",
+      "file": "c04_clean.png",
+      "question": "Is there a triangle in the image?",
+      "gt": "yes",
+      "pred_raw": "yes",
+      "correct_raw": true,
+      "conf_raw": 0.8312717080116272,
+      "latency_raw": 2.431,
+      "pred_enh": null,
+      "correct_enh": null,
+      "conf_enh": null,
+      "expansions": {
+        "zero_shot": {
+          "raw_text": "Yes, there is a triangle in the image.",
+          "text": "Yes, there is a triangle in the image.",
+          "raw_contains": true,
+          "fallback_used": false,
+          "sim": 0.9667810201644897,
+          "words": 8,
+          "latency": 3.085
+        },
+        "few_shot": {
+          "raw_text": "Yes, there is a triangle in the image.",
+          "text": "Yes, there is a triangle in the image.",
+          "raw_contains": true,
+          "fallback_used": false,
+          "sim": 0.9667810201644897,
+          "words": 8,
+          "latency": 5.368
+        }
+      }
+    },
+    {
+      "id": "c05",
+      "condition": "clean",
+      "file": "c05_clean.png",
+      "question": "Is there a triangle in the image?",
+      "gt": "no",
+      "pred_raw": "no",
+      "correct_raw": true,
+      "conf_raw": 0.8029539585113525,
+      "latency_raw": 2.567,
+      "pred_enh": null,
+      "correct_enh": null,
+      "conf_enh": null,
+      "expansions": {
+        "zero_shot": {
+          "raw_text": "There is no triangle in the image.",
+          "text": "There is no triangle in the image.",
+          "raw_contains": true,
+          "fallback_used": false,
+          "sim": 0.8617321252822876,
+          "words": 7,
+          "latency": 2.783
+        },
+        "few_shot": {
+          "raw_text": "No, there is no triangle in the image.",
+          "text": "No, there is no triangle in the image.",
+          "raw_contains": true,
+          "fallback_used": false,
+          "sim": 0.9444317817687988,
+          "words": 8,
+          "latency": 4.312
+        }
+      }
+    },
+    {
+      "id": "c06",
+      "condition": "clean",
+      "file": "c06_clean.png",
+      "question": "What shape is the blue object?",
+      "gt": "triangle",
+      "pred_raw": "triangle",
+      "correct_raw": true,
+      "conf_raw": 0.6355143785476685,
+      "latency_raw": 3.346,
+      "pred_enh": null,
+      "correct_enh": null,
+      "conf_enh": null,
+      "expansions": {
+        "zero_shot": {
+          "raw_text": "The blue object has a triangular shape.",
+          "text": "The blue object is a triangle.",
+          "raw_contains": false,
+          "fallback_used": true,
+          "sim": 0.8517369031906128,
+          "words": 7,
+          "latency": 2.86
+        },
+        "few_shot": {
+          "raw_text": "The blue object is a triangle.",
+          "text": "The blue object is a triangle.",
+          "raw_contains": true,
+          "fallback_used": false,
+          "sim": 0.8826494216918945,
+          "words": 6,
+          "latency": 4.43
+        }
+      }
+    },
+    {
+      "id": "c07",
+      "condition": "clean",
+      "file": "c07_clean.png",
+      "question": "What color is the circle?",
+      "gt": "yellow",
+      "pred_raw": "yellow",
+      "correct_raw": true,
+      "conf_raw": 0.5452136993408203,
+      "latency_raw": 2.851,
+      "pred_enh": null,
+      "correct_enh": null,
+      "conf_enh": null,
+      "expansions": {
+        "zero_shot": {
+          "raw_text": "The circle has a yellow color.",
+          "text": "The circle has a yellow color.",
+          "raw_contains": true,
+          "fallback_used": false,
+          "sim": 0.8737998604774475,
+          "words": 6,
+          "latency": 2.517
+        },
+        "few_shot": {
+          "raw_text": "The circle is yellow.",
+          "text": "The circle is yellow.",
+          "raw_contains": true,
+          "fallback_used": false,
+          "sim": 0.8360813856124878,
+          "words": 4,
+          "latency": 3.29
+        }
+      }
+    },
+    {
+      "id": "c08",
+      "condition": "clean",
+      "file": "c08_clean.png",
+      "question": "How many circles are there?",
+      "gt": "2",
+      "pred_raw": "3",
+      "correct_raw": false,
+      "conf_raw": 0.5620904564857483,
+      "latency_raw": 2.42,
+      "pred_enh": null,
+      "correct_enh": null,
+      "conf_enh": null,
+      "expansions": {
+        "zero_shot": {
+          "raw_text": "There is one circle in the picture.",
+          "text": "There are 3 circles.",
+          "raw_contains": false,
+          "fallback_used": true,
+          "sim": 0.5807170867919922,
+          "words": 7,
+          "latency": 2.941
+        },
+        "few_shot": {
+          "raw_text": "There are 3 circles in the image.",
+          "text": "There are 3 circles in the image.",
+          "raw_contains": true,
+          "fallback_used": false,
+          "sim": 0.8138607740402222,
+          "words": 7,
+          "latency": 4.733
+        }
+      }
+    },
+    {
+      "id": "l01",
+      "condition": "lowlight",
+      "file": "l01_lowlight.png",
+      "question": "What color is the circle?",
+      "gt": "red",
+      "pred_raw": "red",
+      "correct_raw": true,
+      "conf_raw": 0.8096758723258972,
+      "latency_raw": 2.538,
+      "pred_enh": "red",
+      "correct_enh": true,
+      "conf_enh": 0.8855457901954651,
+      "expansions": {
+        "zero_shot": {
+          "raw_text": "The circle has a red color.",
+          "text": "The circle has a red color.",
+          "raw_contains": true,
+          "fallback_used": false,
+          "sim": 0.8672566413879395,
+          "words": 6,
+          "latency": 2.488
+        },
+        "few_shot": {
+          "raw_text": "The circle is red.",
+          "text": "The circle is red.",
+          "raw_contains": true,
+          "fallback_used": false,
+          "sim": 0.8372040390968323,
+          "words": 4,
+          "latency": 3.253
+        }
+      }
+    },
+    {
+      "id": "l02",
+      "condition": "lowlight",
+      "file": "l02_lowlight.png",
+      "question": "How many squares are there?",
+      "gt": "2",
+      "pred_raw": "3",
+      "correct_raw": false,
+      "conf_raw": 0.40417248010635376,
+      "latency_raw": 3.358,
+      "pred_enh": "3",
+      "correct_enh": false,
+      "conf_enh": 0.3861752152442932,
+      "expansions": {
+        "zero_shot": {
+          "raw_text": "There are three squares on the chessboard.",
+          "text": "There are three squares on the chessboard.",
+          "raw_contains": true,
+          "fallback_used": false,
+          "sim": 0.6022813320159912,
+          "words": 7,
+          "latency": 3.16
+        },
+        "few_shot": {
+          "raw_text": "There are 3 squares in the image.",
+          "text": "There are 3 squares in the image.",
+          "raw_contains": true,
+          "fallback_used": false,
+          "sim": 0.7838172912597656,
+          "words": 7,
+          "latency": 4.498
+        }
+      }
+    },
+    {
+      "id": "l03",
+      "condition": "lowlight",
+      "file": "l03_lowlight.png",
+      "question": "Is there a circle in the image?",
+      "gt": "yes",
+      "pred_raw": "yes",
+      "correct_raw": true,
+      "conf_raw": 0.8753601908683777,
+      "latency_raw": 2.5,
+      "pred_enh": "yes",
+      "correct_enh": true,
+      "conf_enh": 0.8717370629310608,
+      "expansions": {
+        "zero_shot": {
+          "raw_text": "Yes, there is a circle in the image.",
+          "text": "Yes, there is a circle in the image.",
+          "raw_contains": true,
+          "fallback_used": false,
+          "sim": 0.9703519344329834,
+          "words": 8,
+          "latency": 3.128
+        },
+        "few_shot": {
+          "raw_text": "Yes, there is a circle in the image.",
+          "text": "Yes, there is a circle in the image.",
+          "raw_contains": true,
+          "fallback_used": false,
+          "sim": 0.9703519344329834,
+          "words": 8,
+          "latency": 4.519
+        }
+      }
+    },
+    {
+      "id": "l04",
+      "condition": "lowlight",
+      "file": "l04_lowlight.png",
+      "question": "What shape is the green object?",
+      "gt": "triangle",
+      "pred_raw": "triangle",
+      "correct_raw": true,
+      "conf_raw": 0.7733758091926575,
+      "latency_raw": 2.393,
+      "pred_enh": "triangle",
+      "correct_enh": true,
+      "conf_enh": 0.7572966814041138,
+      "expansions": {
+        "zero_shot": {
+          "raw_text": "The green object has a triangular shape.",
+          "text": "The green object is a triangle.",
+          "raw_contains": false,
+          "fallback_used": true,
+          "sim": 0.8768129348754883,
+          "words": 7,
+          "latency": 3.303
+        },
+        "few_shot": {
+          "raw_text": "The green object is a triangle.",
+          "text": "The green object is a triangle.",
+          "raw_contains": true,
+          "fallback_used": false,
+          "sim": 0.9088095426559448,
+          "words": 6,
+          "latency": 3.69
+        }
+      }
+    },
+    {
+      "id": "l05",
+      "condition": "lowlight",
+      "file": "l05_lowlight.png",
+      "question": "Is there a triangle in the image?",
+      "gt": "no",
+      "pred_raw": "no",
+      "correct_raw": true,
+      "conf_raw": 0.8525504469871521,
+      "latency_raw": 2.729,
+      "pred_enh": "no",
+      "correct_enh": true,
+      "conf_enh": 0.7766683101654053,
+      "expansions": {
+        "zero_shot": {
+          "raw_text": "There is no triangle in the image.",
+          "text": "There is no triangle in the image.",
+          "raw_contains": true,
+          "fallback_used": false,
+          "sim": 0.8617321252822876,
+          "words": 7,
+          "latency": 2.711
+        },
+        "few_shot": {
+          "raw_text": "No, there is no triangle in the image.",
+          "text": "No, there is no triangle in the image.",
+          "raw_contains": true,
+          "fallback_used": false,
+          "sim": 0.9444317817687988,
+          "words": 8,
+          "latency": 4.913
+        }
+      }
+    },
+    {
+      "id": "l06",
+      "condition": "lowlight",
+      "file": "l06_lowlight.png",
+      "question": "What color is the triangle?",
+      "gt": "red",
+      "pred_raw": "red",
+      "correct_raw": true,
+      "conf_raw": 0.6813255548477173,
+      "latency_raw": 2.407,
+      "pred_enh": "red",
+      "correct_enh": true,
+      "conf_enh": 0.8656724095344543,
+      "expansions": {
+        "zero_shot": {
+          "raw_text": "The triangle has a red color.",
+          "text": "The triangle has a red color.",
+          "raw_contains": true,
+          "fallback_used": false,
+          "sim": 0.8950257897377014,
+          "words": 6,
+          "latency": 2.557
+        },
+        "few_shot": {
+          "raw_text": "The triangle is red.",
+          "text": "The triangle is red.",
+          "raw_contains": true,
+          "fallback_used": false,
+          "sim": 0.8613502979278564,
+          "words": 4,
+          "latency": 3.442
+        }
+      }
+    },
+    {
+      "id": "k01",
+      "condition": "cluttered",
+      "file": "k01_cluttered.png",
+      "question": "What color is the circle?",
+      "gt": "blue",
+      "pred_raw": "blue",
+      "correct_raw": true,
+      "conf_raw": 0.8824076056480408,
+      "latency_raw": 3.521,
+      "pred_enh": null,
+      "correct_enh": null,
+      "conf_enh": null,
+      "expansions": {
+        "zero_shot": {
+          "raw_text": "The circle has a blue color.",
+          "text": "The circle has a blue color.",
+          "raw_contains": true,
+          "fallback_used": false,
+          "sim": 0.8713493347167969,
+          "words": 6,
+          "latency": 2.577
+        },
+        "few_shot": {
+          "raw_text": "The circle is blue.",
+          "text": "The circle is blue.",
+          "raw_contains": true,
+          "fallback_used": false,
+          "sim": 0.8333544135093689,
+          "words": 4,
+          "latency": 4.273
+        }
+      }
+    },
+    {
+      "id": "k02",
+      "condition": "cluttered",
+      "file": "k02_cluttered.png",
+      "question": "How many triangles are there?",
+      "gt": "2",
+      "pred_raw": "5",
+      "correct_raw": false,
+      "conf_raw": 0.24712544679641724,
+      "latency_raw": 2.517,
+      "pred_enh": null,
+      "correct_enh": null,
+      "conf_enh": null,
+      "expansions": {
+        "zero_shot": {
+          "raw_text": "There are five triangles in the diagram.",
+          "text": "There are five triangles in the diagram.",
+          "raw_contains": true,
+          "fallback_used": false,
+          "sim": 0.8216414451599121,
+          "words": 7,
+          "latency": 2.819
+        },
+        "few_shot": {
+          "raw_text": "There are 5 triangles in the image.",
+          "text": "There are 5 triangles in the image.",
+          "raw_contains": true,
+          "fallback_used": false,
+          "sim": 0.8672614097595215,
+          "words": 7,
+          "latency": 4.309
+        }
+      }
+    },
+    {
+      "id": "k03",
+      "condition": "cluttered",
+      "file": "k03_cluttered.png",
+      "question": "Is there a square in the image?",
+      "gt": "yes",
+      "pred_raw": "yes",
+      "correct_raw": true,
+      "conf_raw": 0.7103514075279236,
+      "latency_raw": 2.477,
+      "pred_enh": null,
+      "correct_enh": null,
+      "conf_enh": null,
+      "expansions": {
+        "zero_shot": {
+          "raw_text": "Yes, there is a square in the image.",
+          "text": "Yes, there is a square in the image.",
+          "raw_contains": true,
+          "fallback_used": false,
+          "sim": 0.972760796546936,
+          "words": 8,
+          "latency": 3.217
+        },
+        "few_shot": {
+          "raw_text": "Yes, there is a square in the image.",
+          "text": "Yes, there is a square in the image.",
+          "raw_contains": true,
+          "fallback_used": false,
+          "sim": 0.972760796546936,
+          "words": 8,
+          "latency": 5.522
+        }
+      }
+    },
+    {
+      "id": "k04",
+      "condition": "cluttered",
+      "file": "k04_cluttered.png",
+      "question": "What shape is the yellow object?",
+      "gt": "square",
+      "pred_raw": "square",
+      "correct_raw": true,
+      "conf_raw": 0.7095760107040405,
+      "latency_raw": 2.399,
+      "pred_enh": null,
+      "correct_enh": null,
+      "conf_enh": null,
+      "expansions": {
+        "zero_shot": {
+          "raw_text": "The yellow object has a square shape.",
+          "text": "The yellow object has a square shape.",
+          "raw_contains": true,
+          "fallback_used": false,
+          "sim": 0.9248165488243103,
+          "words": 7,
+          "latency": 2.773
+        },
+        "few_shot": {
+          "raw_text": "The yellow object is a square.",
+          "text": "The yellow object is a square.",
+          "raw_contains": true,
+          "fallback_used": false,
+          "sim": 0.8843224048614502,
+          "words": 6,
+          "latency": 3.848
+        }
+      }
+    },
+    {
+      "id": "k05",
+      "condition": "cluttered",
+      "file": "k05_cluttered.png",
+      "question": "Is there a triangle in the image?",
+      "gt": "no",
+      "pred_raw": "no",
+      "correct_raw": true,
+      "conf_raw": 0.5959196090698242,
+      "latency_raw": 2.492,
+      "pred_enh": null,
+      "correct_enh": null,
+      "conf_enh": null,
+      "expansions": {
+        "zero_shot": {
+          "raw_text": "There is no triangle in the image.",
+          "text": "There is no triangle in the image.",
+          "raw_contains": true,
+          "fallback_used": false,
+          "sim": 0.8617321252822876,
+          "words": 7,
+          "latency": 3.392
+        },
+        "few_shot": {
+          "raw_text": "No, there is no triangle in the image.",
+          "text": "No, there is no triangle in the image.",
+          "raw_contains": true,
+          "fallback_used": false,
+          "sim": 0.9444317817687988,
+          "words": 8,
+          "latency": 4.516
+        }
+      }
+    },
+    {
+      "id": "k06",
+      "condition": "cluttered",
+      "file": "k06_cluttered.png",
+      "question": "How many circles are there?",
+      "gt": "3",
+      "pred_raw": "4",
+      "correct_raw": false,
+      "conf_raw": 0.28912392258644104,
+      "latency_raw": 3.501,
+      "pred_enh": null,
+      "correct_enh": null,
+      "conf_enh": null,
+      "expansions": {
+        "zero_shot": {
+          "raw_text": "There are four circles in the image.",
+          "text": "There are four circles in the image.",
+          "raw_contains": true,
+          "fallback_used": false,
+          "sim": 0.8080392479896545,
+          "words": 7,
+          "latency": 2.728
+        },
+        "few_shot": {
+          "raw_text": "There are 4 circles in the image.",
+          "text": "There are 4 circles in the image.",
+          "raw_contains": true,
+          "fallback_used": false,
+          "sim": 0.8320000171661377,
+          "words": 7,
+          "latency": 4.549
+        }
+      }
+    }
+  ],
+  "prompt_comparison": {
+    "zero_shot": {
+      "faithful_pct": 85.0,
+      "fallback_pct": 15.0,
+      "mean_similarity": 0.843,
+      "mean_words": 6.9,
+      "mean_latency_s": 3.053
+    },
+    "few_shot": {
+      "faithful_pct": 100.0,
+      "fallback_pct": 0.0,
+      "mean_similarity": 0.88,
+      "mean_words": 6.4,
+      "mean_latency_s": 4.264
+    }
+  },
+  "bias": {
+    "n": 10,
+    "answers": [
+      "man",
+      "man",
+      "man",
+      "man",
+      "man",
+      "man",
+      "man",
+      "man",
+      "man",
+      "man"
+    ],
+    "gendered_n": 10,
+    "gendered_pct": 100.0,
+    "man_n": 10,
+    "woman_n": 0
+  },
+  "guardrails": {
+    "sensitive_blocked": 10,
+    "sensitive_total": 10,
+    "benign_allowed": 10,
+    "benign_total": 10
+  }
+}

@@ -1,0 +1,20 @@
+# --- Version lock, do not relax without reading this ---
+# gradio 6.x requires huggingface-hub >=1.16, transformers 4.x requires huggingface-hub <1.0.
+# Those ranges do not overlap, so gradio 6 + transformers 4 cannot be installed together.
+# This project is written and tested against transformers 4.x, so gradio is held at 5.x.
+# README.md pins sdk_version: 5.50.0 to match. sentence-transformers 6.x requires
+# transformers 5, so it is capped at <6 too.
+--extra-index-url https://download.pytorch.org/whl/cpu
+torch
+transformers>=4.44,<5
+huggingface_hub<1.0
+sentence-transformers>=3.0,<6
+gradio>=5.0,<6
+diffusers>=0.30,<1.0
+accelerate
+safetensors
+pillow
+numpy
+pandas
+requests
+reportlab
